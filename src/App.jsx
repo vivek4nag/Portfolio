@@ -1,29 +1,29 @@
-import ParticleBackground from "./components/ParticleBackGround/ParticlesBackground";
-
-import Navbar from "./components/ParticleBackGround/Navbar/Navbar";
+// import ParticleBackground from "./components/ParticleBackGround/ParticlesBackground";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 
 ;
 
 export default function App() {
   return (
-    <div className="w-full h-screen bg-slate-950">
-      <div className=" w-full xl:w-[1400px] py-32 px-4 lg:px-12 pr-4 lg:pr-32">
-        {/* <ParticleBackground /> */}
 
-        {/* Navbar */}
-        <Navbar />
+    <div className=" w-full xl:w-[1400px] py-32 px-4 lg:px-12 pr-4 lg:pr-32">
+      {/* <ParticleBackground  /> */}
 
-        {/* home container */}
+      {/* Navbar */}
+      <Navbar />
 
-        {/* skills container */}
+      {/* home container */}
+      <Home/>
 
-        {/* projects container */}
+      {/* skills container */}
 
-        {/* contact container */}
+      {/* projects container */}
 
-        {/* footer */}
+      {/* contact container */}
 
-      </div>
+      {/* footer */}
+
     </div>
 
   );
