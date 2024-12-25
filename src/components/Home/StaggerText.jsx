@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const StaggerText = ({ naam, interval }) => {
     const DURATION = 0.30;
@@ -31,7 +31,7 @@ export const StaggerText = ({ naam, interval }) => {
                         animate="animate"
                         transition={{
                             duration: DURATION,
-                            ease: "easeInOut",
+                            ease: "easeIn",
                             delay: STAGGER * idx,
                             repeat: Infinity,
                             repeatType: "loop",
