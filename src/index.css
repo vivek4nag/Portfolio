@@ -8,6 +8,7 @@ body {
     min-height: 100vh;
     height: 100vh;
     background: #020010;
+    /* background: #02000a; */
     font-family: "Croissant One", cursive;
     display: flex;
     flex-direction: column;
