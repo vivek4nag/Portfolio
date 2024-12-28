@@ -11,6 +11,10 @@ import JavaSvg from "../assets/java.svg";
 import CPP from "../assets/cpp.svg";
 import ReduxLogo from "../assets/redux.svg";
 import FigmaLogo from "../assets/figma.png"
+import movieImg from "../assets/p1_movieManiaSS.png"
+import geminiImg from "../assets/p2_geminiSS.png"
+import YogaImg from "../assets/yogaSS.png"
+import altImg from "../assets/altproject.jpg"
 
 export const Menus = [
   {
@@ -114,5 +118,76 @@ export const SkillsInfo = [
   {
     name: "C++",
     Logo: CPP,
+  },
+];
+
+
+export const ProjectList = [
+  {
+    id: `project-1-${Date.now()}`,
+    projectName: "MovieMania AI",
+    projectDescription: "MovieMania AI is a movie recommendation app that suggests movies using AI",
+    projectImg: movieImg,
+    altImg: altImg,
+    livelink: "https://movie-mania-vivke04.netlify.app/",
+    githublink: "https://github.com/vivek4nag/MovieMania-AI"
+
+  },
+  {
+    id: `project-2-${Date.now()}`,
+    projectName: "Google Gemini Clone",
+    projectDescription: "your personal AI assistant to help you with your daily tasks made using gemini API",
+    projectImg: geminiImg,
+    altImg: altImg,
+    livelink: "#",
+    githublink: "https://github.com/vivek4nag/Gemini-clone-React"
+  },
+  {
+    id: `project-3-${Date.now()}`,
+    projectName: "Serenity - Yoga App",
+    projectDescription: "your personal Meditation & Yoga trainer to help you stay calm and focused",
+    projectImg: YogaImg,
+    altImg: altImg,
+    livelink: "https://vivek4nag.github.io/mindfull-meditation/",
+    githublink: "https://github.com/vivek4nag/mindfull-meditation"
+  },
+]
+
+export const SmallProjects = [
+  {
+    title: "Stripe",
+    description:
+      "A technology company that builds economic infrastructure for the internet.",
+    link: "https://stripe.com",
+  },
+  {
+    title: "Netflix",
+    description:
+      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+    link: "https://netflix.com",
+  },
+  {
+    title: "Google",
+    description:
+      "A multinational technology company that specializes in Internet-related services and products.",
+    link: "https://google.com",
+  },
+  {
+    title: "Meta",
+    description:
+      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+    link: "https://meta.com",
+  },
+  {
+    title: "Amazon",
+    description:
+      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+    link: "https://amazon.com",
+  },
+  {
+    title: "Microsoft",
+    description:
+      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+    link: "https://microsoft.com",
   },
 ];
