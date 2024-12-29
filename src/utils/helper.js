@@ -1,4 +1,9 @@
-import { faHouse, faComputer, faGraduationCap, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faComputer,
+  faGraduationCap,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import { FaLinkedinIn, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
 import JsLogo from "../assets/js.png";
 import ReactSvg from "../assets/react.svg";
@@ -9,12 +14,22 @@ import CssLogo from "../assets/css-3.png";
 import GitSvg from "../assets/git.svg";
 import JavaSvg from "../assets/java.svg";
 import CPP from "../assets/cpp.svg";
+import Python from "../assets/python.png"
 import ReduxLogo from "../assets/redux.svg";
-import FigmaLogo from "../assets/figma.png"
-import movieImg from "../assets/p1_movieManiaSS.png"
-import geminiImg from "../assets/p2_geminiSS.png"
-import YogaImg from "../assets/yogaSS.png"
-import altImg from "../assets/altproject.jpg"
+import FigmaLogo from "../assets/figma.png";
+import movieImg from "../assets/p1_movieManiaSS.png";
+import geminiImg from "../assets/p2_geminiSS.png";
+import YogaImg from "../assets/yogaSS.png";
+import altImg from "../assets/altproject.jpg";
+import CrickLiveImg from "../assets/sp01_criclive.png";
+import pokemonImg from "../assets/sp02_pokemon.png";
+import JokeImg from "../assets/sp03_jokes.png";
+import NewsImg from "../assets/sp04_newsApp.png";
+import TicTacToeImg from "../assets/sp05_tictactoe.png";
+import RPSImg from "../assets/sp06_RPS.png";
+import FlappyBirdImg from "../assets/sp07_flappybird.png"
+import PasswordGeneratorImg from "../assets/sp08_password.png"
+import weatherImg from "../assets/sp09_weatherApp.png"
 
 export const Menus = [
   {
@@ -44,7 +59,6 @@ export const Menus = [
 ];
 
 export const Socials = [
-  
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
@@ -80,7 +94,7 @@ export const SkillsInfo = [
     name: "ReactJS",
     Logo: ReactSvg,
   },
-  
+
   {
     name: "TailwindCSS",
     Logo: TailwindSvg,
@@ -89,7 +103,7 @@ export const SkillsInfo = [
     name: "Figma",
     Logo: FigmaLogo,
   },
-  
+
   {
     name: "Bootstrap",
     Logo: BootstrapLogo,
@@ -98,7 +112,7 @@ export const SkillsInfo = [
     name: "Redux Toolkit",
     Logo: ReduxLogo,
   },
-  
+
   {
     name: "HTML",
     Logo: HtmlLogo,
@@ -119,75 +133,109 @@ export const SkillsInfo = [
     name: "C++",
     Logo: CPP,
   },
+  {
+    name: "Python",
+    Logo: Python,
+  },
 ];
-
 
 export const ProjectList = [
   {
     id: `project-1-${Date.now()}`,
     projectName: "MovieMania AI",
-    projectDescription: "MovieMania AI is a movie recommendation app that suggests movies using AI",
+    projectDescription:
+      "MovieMania AI is a movie recommendation app that suggests movies using AI",
     projectImg: movieImg,
     altImg: altImg,
     livelink: "https://movie-mania-vivke04.netlify.app/",
-    githublink: "https://github.com/vivek4nag/MovieMania-AI"
-
+    githublink: "https://github.com/vivek4nag/MovieMania-AI",
   },
   {
     id: `project-2-${Date.now()}`,
     projectName: "Google Gemini Clone",
-    projectDescription: "your personal AI assistant to help you with your daily tasks made using gemini API",
+    projectDescription:
+      "your personal AI assistant to help you with your daily tasks made using gemini API",
     projectImg: geminiImg,
     altImg: altImg,
     livelink: "#",
-    githublink: "https://github.com/vivek4nag/Gemini-clone-React"
+    githublink: "https://github.com/vivek4nag/Gemini-clone-React",
   },
   {
     id: `project-3-${Date.now()}`,
     projectName: "Serenity - Yoga App",
-    projectDescription: "your personal Meditation & Yoga trainer to help you stay calm and focused",
+    projectDescription:
+      "your personal Meditation & Yoga trainer to help you stay calm and focused",
     projectImg: YogaImg,
     altImg: altImg,
     livelink: "https://vivek4nag.github.io/mindfull-meditation/",
-    githublink: "https://github.com/vivek4nag/mindfull-meditation"
+    githublink: "https://github.com/vivek4nag/mindfull-meditation",
   },
-]
+];
 
 export const SmallProjects = [
   {
-    title: "Stripe",
+    title: "CrickLive Score 🏏",
     description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+      "A live cricket score app that shows the live score of the ongoing cricket match across the world",
+    img: CrickLiveImg,
+    link: "https://cricklive-score-vivek04.netlify.app/",
   },
   {
-    title: "Netflix",
+    title: "HeadlineHub 📰",
     description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+      "An interactive news app, offering categorized news from across the world at your fingertips.",
+    img: NewsImg,
+    link: "https://github.com/vivek4nag/NEWS_App_React",
   },
   {
-    title: "Google",
+    title: "PokeMon Card Quest🐣 ",
     description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+      "Powered by PokeAPI, this app allows you to search for any Pokemon and get detailed information about it.",
+    img: pokemonImg,
+    link: "https://vivek4nag.github.io/PokeCard-Quest-/",
   },
   {
-    title: "Meta",
+    title: "Jokes Generator 😜",
     description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+      "This app serves up fresh jokes for every mood, from harmless dad jokes to dark, edgy humor.",
+    img: JokeImg,
+    link: "https://vivek4nag.github.io/DAD-Jokes-Generator/",
   },
   {
-    title: "Amazon",
+    title: "Flappy Bird 🕊️",
     description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+      "The retro Flappy Bird game, featuring a clean UI and responsive gameplay.",
+    img: FlappyBirdImg,
+    link: "https://vivek4nag.github.io/Flappy-Bird/",
   },
   {
-    title: "Microsoft",
+    title: "Tic-Tac-Toe❌⭕",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "A simple Tic-Tac-Toe game, featuring a clean UI and responsive gameplay.",
+    img: TicTacToeImg,
+    link: "https://vivek4nag.github.io/Tic-Tac-Toe/",
   },
+  {
+    title: "Rock-Paper-Scissors 🪨",
+    description:
+      "The classic Rock-Paper-Scissors game, featuring a clean UI and responsive gameplay.",
+    img: RPSImg,
+    link: "https://vivek4nag.github.io/Rock-Paper-Scissors/",
+  }, 
+  {
+    title: "Password Generator 🔑",
+    description:
+      "A password generator that generates a random password every time based on the user's input.",
+    img: PasswordGeneratorImg,
+    link: "https://vivek4nag.github.io/Password-Generator/",
+  },
+  {
+    title: "WeatherGo 🌦️",
+    description:
+      "A simple weather app that fetches real-time weather details for any location using a weather API",
+    img: weatherImg,
+    link: "https://vivek4nag.github.io/Weather-App/",
+  },
+  
+  
 ];
