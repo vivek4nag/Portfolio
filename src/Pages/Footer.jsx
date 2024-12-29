@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
+
 import { motion, useMotionTemplate, useMotionValue, animate, AnimatePresence } from "framer-motion"
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Socials } from "../utils/helper";
 import SocialLinks from "../components/Home/SocialLinks";
 
@@ -9,16 +9,6 @@ const COLOR = ["#13FFAA", "#CE84CF", "#DD335C", "#FF5733", "#335CFF", "#1E67C6",
 const FooterCard = () => {
     const color = useMotionValue(COLOR[0]);
     const backgroundImage = useMotionTemplate`radial-gradient(100% 120% at 50% 0%, #020010 50% , ${color})`
-    // const border = useMotionTemplate`1px solid ${color}`
-    // const borderShadow = useMotionTemplate`0px 4px 24px  ${color}`
-
-    // const [tarik, setTarik] = useState(new Date().toLocaleTimeString());
-    // useEffect(() => {
-    //     const timerFn = setInterval(() => {
-    //         setTarik(new Date().toLocaleTimeString());
-    //     }, 1000);
-    //     return () => clearInterval(timerFn);
-    // }, [])
 
 
     useEffect(() => {
@@ -33,7 +23,7 @@ const FooterCard = () => {
     return (
         <motion.div style={{
             backgroundImage,
-        }} className=" relative flex w-full h-[25rem] md:h-[18rem]  overflow-hidden bg-transparent text-grey-200 -z-50 "
+        }} className=" relative flex max-w-full h-[25rem] md:h-[18rem] overflow-hidden bg-transparent text-grey-200 -z-50 "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
