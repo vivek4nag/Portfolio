@@ -9,6 +9,7 @@ body {
     height: 100vh;
     background: #020010;
     /* background: #02000a; */
+    /* background: #000000; */
     font-family: "Croissant One", cursive;
     display: flex;
     flex-direction: column;

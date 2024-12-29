@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <motion.div className="fixed bottom-0 right-0 lg:top-0 w-full h-auto lg:h-screen lg:w-32 flex justify-center items-end lg:items-center pb-8 lg:pb-0 z-50"
+    <motion.div className="fixed bottom-0 right-0 lg:top-0 w-full h-auto lg:h-screen lg:w-32 flex justify-center items-end lg:items-center pb-3 lg:pb-0 z-50"
     initial={{opacity: 0, x: 150}}
     animate={{opacity: 1, x: 0}}
     transition={{duration: 1.2, ease: "easeIn"}}
