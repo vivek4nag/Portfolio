@@ -4,7 +4,6 @@ import { Label } from "@radix-ui/react-label";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-
 const Contact = () => {
   const [errorMsg, setErrorMsg] = useState(false)
   const form = useRef();
@@ -43,92 +42,95 @@ const Contact = () => {
 
 
   return (
-    <section
-      id="contact"
-      className="w-full h-screen flex flex-col items-center justify-center"
-    >
-      <div className="flex flex-col items-center justify-center">
-        <Header title="LET'S CONNECT!" />
+    <>
+      <section
+        id="contact"
+        className=" w-full h-auto flex flex-col items-center justify-center md:pb-2"
+      >
+        <div className="flex flex-col items-center justify-center">
+          <Header title="LET'S CONNECT!" />
 
-        <motion.div
-          className="flex px-10 py-2 max-w-[850px]"
-          initial={{ opacity: 0, scaleX: 0.7 }}
-          whileInView={{ opacity: 1, scaleX: 1 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
-        >
-          <p className=" text-gray-400 text-sm md:text-lg">
-            I’d love to hear from you! Whether it’s just a quick hello or
-            something more, don’t hesitate to drop me a message. I’ll get back
-            to you as soon as I can!
-          </p>
-        </motion.div>
-      </div>
-
-      <div className="flex flex-col gap-8 p-4">
-        <form ref={form} onSubmit={sendEmail}>
-
-          <motion.div className="flex flex-col md:flex-row gap-4"
-            initial={{ opacity: 0, scaleY: 0.7 }}
-            whileInView={{ opacity: 1, scaleY: 1 }}
+          <motion.div
+            className="flex px-10 py-2 max-w-[850px]"
+            initial={{ opacity: 0, scaleX: 0.7 }}
+            whileInView={{ opacity: 1, scaleX: 1 }}
             transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
           >
-            <div>
-              <Label className="text-gray-400 ml-1 text-lg">First Name</Label>
-              <Input type="text" className="h-12 w-72" name="user_name" />
-              {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">Name must be aleast 4 characters</p>}
-            </div>
-            <div>
-              <Label className="text-gray-400 ml-1 text-lg">Last Name</Label>
-              <Input className="h-12 w-72" />
-              {errorMsg && <p className="text-yellow-500 ml-1 text-xs md:text-sm">Optional, can be left blank</p>}
-
-            </div>
+            <p className=" text-gray-400 text-sm md:text-lg">
+              I’d love to hear from you! Whether it’s just a quick hello or
+              something more, don’t hesitate to drop me a message. I’ll get back
+              to you as soon as I can!
+            </p>
           </motion.div>
+        </div>
 
-          <motion.div className="py-6"
-            initial={{ opacity: 0, scaleY: 0.7 }}
-            whileInView={{ opacity: 1, scaleY: 1 }}
-            transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
-          >
-            <Label className="text-gray-400 ml-1 text-lg">Email</Label>
-            <Input type="email" className="h-12 w-full" name="user_email" />
-            {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">enter a valid email ID</p>}
+        <div className="flex flex-col gap-8 p-4">
+          <form ref={form} onSubmit={sendEmail}>
 
-          </motion.div>
-
-          <motion.div className="py-2"
-            initial={{ opacity: 0, scaleY: 0.7 }}
-            whileInView={{ opacity: 1, scaleY: 1 }}
-            transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
-          >
-            <Label className="text-gray-400 ml-1 text-xl">
-              Your Valuable Message 😊
-            </Label>
-            <Input type="textarea" className="h-40" name="message" />
-            {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">please enter a message</p>}
-
-          </motion.div>
-
-          <motion.div className=" py-6"
-            initial={{ opacity: 0, scaleY: 0.7 }}
-            whileInView={{ opacity: 1, scaleY: 1 }}
-            transition={{ ease: "easeInOut", duration: 1, delay: 0.7 }}
-          >
-            <button
-              className="relative inline-flex h-12 w-40 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-              type="submit"
-              value="Send"
+            <motion.div className="flex flex-col md:flex-row gap-4"
+              initial={{ opacity: 0, scaleY: 0.7 }}
+              whileInView={{ opacity: 1, scaleY: 1 }}
+              transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
             >
-              <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                Send Message &rarr;
-              </span>
-            </button>
-          </motion.div>
-        </form>
-      </div>
-      
-    </section>
+              <div>
+                <Label className="text-gray-400 ml-1 text-lg">First Name</Label>
+                <Input type="text" className="h-12 w-72" name="user_name" />
+                {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">Name must be aleast 4 characters</p>}
+              </div>
+              <div>
+                <Label className="text-gray-400 ml-1 text-lg">Last Name</Label>
+                <Input className="h-12 w-72" />
+                {errorMsg && <p className="text-yellow-500 ml-1 text-xs md:text-sm">Optional, can be left blank</p>}
+
+              </div>
+            </motion.div>
+
+            <motion.div className="py-6"
+              initial={{ opacity: 0, scaleY: 0.7 }}
+              whileInView={{ opacity: 1, scaleY: 1 }}
+              transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
+            >
+              <Label className="text-gray-400 ml-1 text-lg">Email</Label>
+              <Input type="email" className="h-12 w-full" name="user_email" />
+              {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">enter a valid email ID</p>}
+
+            </motion.div>
+
+            <motion.div className="py-2"
+              initial={{ opacity: 0, scaleY: 0.7 }}
+              whileInView={{ opacity: 1, scaleY: 1 }}
+              transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
+            >
+              <Label className="text-gray-400 ml-1 text-xl">
+                Your Valuable Message 😊
+              </Label>
+              <Input type="textarea" className="h-40" name="message" />
+              {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">please enter a message</p>}
+
+            </motion.div>
+
+            <motion.div className=" py-1 md:py-6"
+              initial={{ opacity: 0, scaleY: 0.7 }}
+              whileInView={{ opacity: 1, scaleY: 1 }}
+              transition={{ ease: "easeInOut", duration: 1, delay: 0.7 }}
+            >
+              <button
+                className="relative inline-flex h-12 w-40 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                type="submit"
+                value="Send"
+              >
+                <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+                <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                  Send Message &rarr;
+                </span>
+              </button>
+            </motion.div>
+          </form>
+          
+        </div>
+        
+      </section>
+    </>
   );
 };
 

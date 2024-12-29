@@ -2,9 +2,9 @@ import {
   faHouse,
   faComputer,
   faGraduationCap,
-  faEnvelope,
+  faAddressBook
 } from "@fortawesome/free-solid-svg-icons";
-import { FaLinkedinIn, FaGithub, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaTelegram, FaTwitter, FaEnvelope } from "react-icons/fa";
 import JsLogo from "../assets/js.png";
 import ReactSvg from "../assets/react.svg";
 import TailwindSvg from "../assets/tailwindcss.svg";
@@ -52,7 +52,7 @@ export const Menus = [
   },
   {
     id: `contact-${Date.now()}`,
-    Icon: faEnvelope,
+    Icon: faAddressBook,
     url: "#contact",
     name: "Contact",
   },
@@ -78,11 +78,18 @@ export const Socials = [
     color: "#ff0000",
   },
   {
+    id: `email-${Date.now()}`,
+    Icon: FaEnvelope,
+    url: "mailto:vivek4nag@gmail.com",
+    color: "#D44638",
+  },
+  {
     id: `telegram-${Date.now()}`,
     Icon: FaTelegram,
     url: "https://t.me/Norindar_Mudi",
     color: "#ff0000",
   },
+  
 ];
 
 export const SkillsInfo = [
