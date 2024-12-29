@@ -1,4 +1,4 @@
-import dp from "../../assets/dp.jpg";
+import dp from "../../assets/dp3.jpg";
 import { motion } from "framer-motion";
 const MeraThobda = () => {
     return (
@@ -6,7 +6,7 @@ const MeraThobda = () => {
             <div className="w-full md:w-1/3 h-full flex justify-center items-start md:items-center">
                 <motion.img
                     src={dp}
-                    className="w-[200px] md:w-[250px] h-auto object-contain rounded-full cursor-pointer scale-100"
+                    className="w-[220px] md:w-[280px] h-auto object-contain rounded-full cursor-pointer scale-100"
                     initial={{ y: 0 }}
                     animate={{
                         x: [-4, 4, -4],

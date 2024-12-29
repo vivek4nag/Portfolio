@@ -3,8 +3,15 @@ import Header from "../components/Header";
 import { Label } from "@radix-ui/react-label";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { motion } from "framer-motion";
+import {  motion } from "framer-motion";
+// import {AnimatePresence} from "framer-motion"
+// import { Socials } from "../utils/helper";
+// import SocialLinks from "../components/Home/SocialLinks";
+
+
+
 const Contact = () => {
+
   const [errorMsg, setErrorMsg] = useState(false)
   const form = useRef();
 
@@ -47,6 +54,7 @@ const Contact = () => {
         id="contact"
         className=" w-full h-auto flex flex-col items-center justify-center md:pb-2"
       >
+        
         <div className="flex flex-col items-center justify-center">
           <Header title="LET'S CONNECT!" />
 
@@ -128,6 +136,14 @@ const Contact = () => {
           </form>
           
         </div>
+        {/* <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 mb-4">
+                    <AnimatePresence>
+                        {Socials &&
+                            Socials.map((item, idx) => (
+                                <SocialLinks key={idx} data={item} index={idx} />
+                            ))}
+                    </AnimatePresence>
+                </div> */}
         
       </section>
     </>
