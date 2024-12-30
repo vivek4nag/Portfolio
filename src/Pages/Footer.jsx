@@ -54,17 +54,17 @@ const FooterCard = () => {
                     </AnimatePresence>
                 </div>
 
-                <h4 className="text-center gap-3 text-lg md:text-xl">
+                <h4 className="text-center gap-3 text-sm md:text-xl">
                     Built with passion and React by{" "}
-                    <span className="text-2xl md:text-3xl text-bold text-lime-500">
+                    <span className="text-xl md:text-3xl text-bold text-lime-500">
                         Vivek
                     </span>
                 </h4>
-                <p className=" text-center gap-3 text-xl">
+                <p className=" text-center gap-3 text-sm md:text-xl">
                     😉 <span className="text-green-500">No copyrights here.</span> Feel
                     free to remix this portfolio into your own masterpiece! 😉
                 </p>
-                <p className=" text-center gap-3 text-xl">
+                <p className=" text-center gap-3 text-sm md:text-xl">
                     🤝 Collaboration and creativity make the web a better place! 🤝
                 </p>
             </div>

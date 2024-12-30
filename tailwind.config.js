@@ -1,23 +1,5 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx}",
-//   ],
-//   theme: {
-//     extend: {
-//       colors: {
-//         primary: "#00FFAA",
-//         secondary: "#00FF60",
-//         textlight: "#a7a7a7",
-//         bgPrimary: "#020010",
-//       },
-//     },
-//   },
-//   plugins: [],
-// }
 
 const defaultTheme = require("tailwindcss/defaultTheme");
 

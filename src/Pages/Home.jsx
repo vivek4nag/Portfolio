@@ -17,7 +17,7 @@ const Home = () => {
                 <MeraThobda/>
 
                 {/* content section */}
-                <div className="w-full md:w-2/3 h-full flex flex-col items-center justify-center gap-4 text-center md:text-left">
+                <div className="w-full md:w-2/3 h-full flex flex-col items-center justify-center gap-4 text-center md:text-left md:pr-8">
                     <AboutMe/>
 
                     {/* social media links */}
