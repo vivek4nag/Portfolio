@@ -2,12 +2,11 @@ import {
     motion,
     useMotionTemplate,
     useMotionValue,
-    animate,
-    AnimatePresence,
+    animate,  
 } from "framer-motion";
 import { useEffect } from "react";
-import { Socials } from "../utils/helper";
-import SocialLinks from "../components/Home/SocialLinks";
+// import { Socials } from "../utils/helper";
+// import SocialLinks from "../components/Home/SocialLinks";
 
 const COLOR = [
     "#13FFAA",
@@ -45,14 +44,14 @@ const FooterCard = () => {
             transition={{ duration: 1, delay: 0.4 }}
         >
             <div className="text-slate-200 w-screen flex flex-col justify-end items-center px-2 md:px-10 pt-[8rem] pb-24 md:pb-8">
-                <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 mb-4">
+                {/* <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 mb-4">
                     <AnimatePresence>
                         {Socials &&
                             Socials.map((item, idx) => (
                                 <SocialLinks key={idx} data={item} index={idx} />
                             ))}
                     </AnimatePresence>
-                </div>
+                </div> */}
 
                 <h4 className="text-center gap-3 text-sm md:text-xl">
                     Built with passion and React by{" "}

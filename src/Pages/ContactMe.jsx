@@ -4,9 +4,9 @@ import { Label } from "@radix-ui/react-label";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {  motion } from "framer-motion";
-// import {AnimatePresence} from "framer-motion"
-// import { Socials } from "../utils/helper";
-// import SocialLinks from "../components/Home/SocialLinks";
+import {AnimatePresence} from "framer-motion"
+import { Socials } from "../utils/helper";
+import SocialLinks from "../components/Home/SocialLinks";
 
 
 
@@ -62,7 +62,7 @@ const Contact = () => {
             className="flex px-10 py-2 max-w-[850px]"
             initial={{ opacity: 0, scaleX: 0.7 }}
             whileInView={{ opacity: 1, scaleX: 1 }}
-            transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
+            transition={{ ease: "easeInOut", duration: 0.8, delay: 0.3 }}
           >
             <p className=" text-gray-400 text-sm md:text-lg">
               I’d love to hear from you! Whether it’s just a quick hello or
@@ -78,7 +78,7 @@ const Contact = () => {
             <motion.div className="flex flex-col md:flex-row gap-4"
               initial={{ opacity: 0, scaleY: 0.7 }}
               whileInView={{ opacity: 1, scaleY: 1 }}
-              transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.4 }}
             >
               <div>
                 <Label className="text-gray-400 ml-1 text-lg">First Name</Label>
@@ -96,7 +96,7 @@ const Contact = () => {
             <motion.div className="py-6"
               initial={{ opacity: 0, scaleY: 0.7 }}
               whileInView={{ opacity: 1, scaleY: 1 }}
-              transition={{ ease: "easeInOut", duration: 1, delay: 0.5 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.5 }}
             >
               <Label className="text-gray-400 ml-1 text-lg">Email</Label>
               <Input type="email" className="h-12 w-full" name="user_email" />
@@ -107,7 +107,7 @@ const Contact = () => {
             <motion.div className="py-2"
               initial={{ opacity: 0, scaleY: 0.7 }}
               whileInView={{ opacity: 1, scaleY: 1 }}
-              transition={{ ease: "easeInOut", duration: 1, delay: 0.6 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.6 }}
             >
               <Label className="text-gray-400 ml-1 text-xl">
                 Your Valuable Message 😊
@@ -120,7 +120,7 @@ const Contact = () => {
             <motion.div className=" py-1 md:py-6"
               initial={{ opacity: 0, scaleY: 0.7 }}
               whileInView={{ opacity: 1, scaleY: 1 }}
-              transition={{ ease: "easeInOut", duration: 1, delay: 0.7 }}
+              transition={{ ease: "easeInOut", duration: 0.8, delay: 0.7 }}
             >
               <button
                 className="relative inline-flex h-12 w-40 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
@@ -136,14 +136,14 @@ const Contact = () => {
           </form>
           
         </div>
-        {/* <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 mb-4">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-20 mt-2 mb-4">
                     <AnimatePresence>
                         {Socials &&
                             Socials.map((item, idx) => (
                                 <SocialLinks key={idx} data={item} index={idx} />
                             ))}
                     </AnimatePresence>
-                </div> */}
+                </div>
         
       </section>
     </>

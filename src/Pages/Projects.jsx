@@ -12,9 +12,9 @@ const Projects = () => {
 
         <motion.div
           className="flex flex-wrap gap-4 justify-evenly pb-5 md:pb-10"
-          initial={{ opacity: 0, scaleY: 0.5 }}
+          initial={{ opacity: 0, scaleY: 0.6 }}
           whileInView={{ opacity: 1, scaleY: 1 }}
-          transition={{ ease: "easeIn", duration: 1, delay: 0.2 }}
+          transition={{ ease: "easeInOut", duration: 0.7, delay: 0.2 }}
         >
           {ProjectList.map((item) => (
             <Project3DCard key={item.id} {...item} />
