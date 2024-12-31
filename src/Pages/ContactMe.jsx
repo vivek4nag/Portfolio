@@ -3,10 +3,10 @@ import Header from "../components/Header";
 import { Label } from "@radix-ui/react-label";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import {  motion } from "framer-motion";
-import {AnimatePresence} from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 import { Socials } from "../utils/helper";
 import SocialLinks from "../components/Home/SocialLinks";
+import { toast,Bounce } from "react-toastify"
 
 
 
@@ -21,9 +21,22 @@ const Contact = () => {
     const firstName = form.current?.elements["user_name"].value.trim();
     const email = form.current?.elements["user_email"].value.trim();
     const msg = form.current?.elements["message"].value.trim();
+    const EnvPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 
     if (!firstName || !email || !msg) {
       // alert("please Enter valid Name & Email ID")
+      toast.warn("Please enter valid name & email address", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce,
+      });
       setErrorMsg(true)
       return;
     }
@@ -31,16 +44,36 @@ const Contact = () => {
       setErrorMsg(false)
       emailjs
         .sendForm("service_vkb8wb8", "template_48shtut", form.current, {
-          publicKey: "yPrzmbUUD5qd8_c8D",
+          publicKey: `${EnvPublicKey}`,
         })
         .then(
           () => {
-            console.log("SUCCESS!");
-            console.log("bhej diya");
+            // console.log("bhej diya");
             e.target.reset();
+            toast.success('Your Mail Sent Successfully. I will get back to you ASAP 😊', {
+              position: "top-right",
+              autoClose: 4000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Bounce,
+            });
           },
           (error) => {
-            alert("FAILED...", error.text);
+            toast.error("FAILED...", error.text, {
+              position: "top-right",
+              autoClose: 4000,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              // transition: Bounce,
+            });
             console.log("FAILED...", error.text);
           }
         );
@@ -54,7 +87,7 @@ const Contact = () => {
         id="contact"
         className=" w-full h-auto flex flex-col items-center justify-center md:pb-2"
       >
-        
+
         <div className="flex flex-col items-center justify-center">
           <Header title="LET'S CONNECT!" />
 
@@ -134,17 +167,17 @@ const Contact = () => {
               </button>
             </motion.div>
           </form>
-          
+
         </div>
         <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 md:gap-20 mt-2 mb-4">
-                    <AnimatePresence>
-                        {Socials &&
-                            Socials.map((item, idx) => (
-                                <SocialLinks key={idx} data={item} index={idx} />
-                            ))}
-                    </AnimatePresence>
-                </div>
-        
+          <AnimatePresence>
+            {Socials &&
+              Socials.map((item, idx) => (
+                <SocialLinks key={idx} data={item} index={idx} />
+              ))}
+          </AnimatePresence>
+        </div>
+
       </section>
     </>
   );

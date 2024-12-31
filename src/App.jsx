@@ -4,10 +4,11 @@ import Skills from "./Pages/Skills";
 import Contact from "./Pages/ContactMe";
 import Projects from "./Pages/Projects";
 import FooterCard from "./Pages/Footer";
+import { ToastContainer, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { StarsBackground } from "./components/ui/stars-background";
 import { ShootingStars } from "./components/ui/shooting-stars";
 
-;
 
 export default function App() {
   return (
@@ -36,6 +37,19 @@ export default function App() {
       </div>
       <FooterCard/>
     </div>
+    <ToastContainer
+    position="top-right"
+    autoClose={3000}
+    hideProgressBar={false}
+    newestOnTop={false}
+    closeOnClick={false}
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    theme="light"
+    transition={Bounce} 
+    />
     </>
 
   );
