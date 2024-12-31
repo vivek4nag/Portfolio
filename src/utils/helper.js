@@ -154,7 +154,7 @@ export const ProjectList = [
       "MovieMania AI is a movie recommendation app that suggests movies using AI",
     projectImg: movieImg,
     altImg: altImg,
-    livelink: "https://movie-mania-vivke04.netlify.app/",
+    livelink: "https://moviemania-ai.vercel.app/",
     githublink: "https://github.com/vivek4nag/MovieMania-AI",
   },
   {
@@ -164,7 +164,7 @@ export const ProjectList = [
       "your personal AI assistant to help you with your daily tasks made using gemini API",
     projectImg: geminiImg,
     altImg: altImg,
-    livelink: "#",
+    livelink: "https://gemini-react-vivek04.netlify.app/",
     githublink: "https://github.com/vivek4nag/Gemini-clone-React",
   },
   {

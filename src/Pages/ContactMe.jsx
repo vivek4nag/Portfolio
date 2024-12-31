@@ -64,7 +64,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, scaleX: 1 }}
             transition={{ ease: "easeInOut", duration: 0.8, delay: 0.3 }}
           >
-            <p className=" text-gray-400 text-sm md:text-lg">
+            <p className=" text-gray-400 text-sm md:text-lg select-none">
               I’d love to hear from you! Whether it’s just a quick hello or
               something more, don’t hesitate to drop me a message. I’ll get back
               to you as soon as I can!
