@@ -116,7 +116,7 @@ const Contact = () => {
               <div>
                 <Label className="text-gray-400 ml-1 text-lg">First Name</Label>
                 <Input type="text" className="h-12 w-72" name="user_name" />
-                {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">Name must be aleast 4 characters</p>}
+                {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">Name must be at least 4 characters long</p>}
               </div>
               <div>
                 <Label className="text-gray-400 ml-1 text-lg">Last Name</Label>
@@ -133,7 +133,7 @@ const Contact = () => {
             >
               <Label className="text-gray-400 ml-1 text-lg">Email</Label>
               <Input type="email" className="h-12 w-full" name="user_email" />
-              {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">enter a valid email ID</p>}
+              {errorMsg && <p className="text-red-500 ml-1 text-xs md:text-sm">Enter a valid email ID</p>}
 
             </motion.div>
 
