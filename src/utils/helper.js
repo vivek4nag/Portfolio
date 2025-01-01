@@ -185,6 +185,7 @@ export const SmallProjects = [
     description:
       "A live cricket score app that shows the live score of the ongoing cricket match across the world",
     img: CrickLiveImg,
+    altImg:altImg,
     link: "https://cricklive-score-vivek04.netlify.app/",
   },
   {
@@ -192,6 +193,7 @@ export const SmallProjects = [
     description:
       "An interactive news app, offering categorized news from across the world at your fingertips.",
     img: NewsImg,
+    altImg:altImg,
     link: "https://github.com/vivek4nag/NEWS_App_React",
   },
   {
@@ -199,6 +201,7 @@ export const SmallProjects = [
     description:
       "Powered by PokeAPI, this app allows you to search for any Pokemon and get detailed information about it.",
     img: pokemonImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/PokeCard-Quest-/",
   },
   {
@@ -206,6 +209,7 @@ export const SmallProjects = [
     description:
       "This app serves up fresh jokes for every mood, from harmless dad jokes to dark, edgy humor.",
     img: JokeImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/DAD-Jokes-Generator/",
   },
   {
@@ -213,6 +217,7 @@ export const SmallProjects = [
     description:
       "The retro Flappy Bird game, featuring a clean UI and responsive gameplay.",
     img: FlappyBirdImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/Flappy-Bird/",
   },
   {
@@ -220,6 +225,7 @@ export const SmallProjects = [
     description:
       "A simple Tic-Tac-Toe game, featuring a clean UI and responsive gameplay.",
     img: TicTacToeImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/Tic-Tac-Toe/",
   },
   {
@@ -227,6 +233,7 @@ export const SmallProjects = [
     description:
       "The classic Rock-Paper-Scissors game, featuring a clean UI and responsive gameplay.",
     img: RPSImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/Rock-Paper-Scissors/",
   }, 
   {
@@ -234,6 +241,7 @@ export const SmallProjects = [
     description:
       "A password generator that generates a random password every time based on the user's input.",
     img: PasswordGeneratorImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/Password-Generator/",
   },
   {
@@ -241,6 +249,7 @@ export const SmallProjects = [
     description:
       "A simple weather app that fetches real-time weather details for any location using a weather API",
     img: weatherImg,
+    altImg:altImg,
     link: "https://vivek4nag.github.io/Weather-App/",
   },
   

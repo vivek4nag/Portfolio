@@ -42,7 +42,7 @@ export const HoverEffect = ({ items, className }) => {
           </AnimatePresence>
           <Card>
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription img={item.img}>
+            <CardDescription img={item.img} altImg={item.altImg}>
               {item.description}{" "}
             </CardDescription>
           </Card>
@@ -80,7 +80,7 @@ export const CardTitle = ({ className, children }) => {
   );
 };
 
-export const CardDescription = ({ className, children, img }) => {
+export const CardDescription = ({ className, children, img, altImg }) => {
   return (
     <div className="flex flex-col justify-center items-center">
       <p
@@ -92,7 +92,7 @@ export const CardDescription = ({ className, children, img }) => {
         {children}
       </p>
       <div className="w-full h-auto pt-3">
-      <img src={img} alt="github" className="w-full h-[12rem] object-cover rounded-xl" />
+      <img src={img || altImg} alt="ghanta" className="w-full h-[12rem] object-cover rounded-xl" />
       </div>
     </div>
   );
