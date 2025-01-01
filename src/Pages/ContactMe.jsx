@@ -28,7 +28,7 @@ const Contact = () => {
       // alert("please Enter valid Name & Email ID")
       toast.warn("Please enter valid name & email address", {
         position: "top-right",
-        autoClose: 4000,
+        autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: false,
         pauseOnHover: true,
@@ -65,7 +65,7 @@ const Contact = () => {
           (error) => {
             toast.error("FAILED...", error.text, {
               position: "top-right",
-              autoClose: 4000,
+              autoClose: 3000,
               hideProgressBar: false,
               closeOnClick: false,
               pauseOnHover: true,
