@@ -86,7 +86,7 @@ export const Socials = [
   {
     id: `telegram-${Date.now()}`,
     Icon: FaTelegram,
-    url: "https://t.me/Norindar_Mudi",
+    url: "https://t.me/Vivek4Nag",
     color: "#ff0000",
   },
   

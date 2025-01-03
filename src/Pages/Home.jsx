@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Socials } from "../utils/helper";
 import SocialLinks from "../components/Home/SocialLinks";
-import resume from "../assets/Dummy CV.pdf";
+import resume from "../assets/Vivek_Nag_Resume.pdf";
 import AboutMe from "../components/Home/AboutMe";
 import MeraThobda from "../components/Home/MeraThobda";
 import CV_Button from "../components/Home/CV_Button";
