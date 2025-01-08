@@ -139,11 +139,7 @@ export const SkillsInfo = [
   {
     name: "C++",
     Logo: CPP,
-  },
-  {
-    name: "Python",
-    Logo: Python,
-  },
+  }
 ];
 
 export const ProjectList = [
