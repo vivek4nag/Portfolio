@@ -14,7 +14,7 @@ import CssLogo from "../assets/css-3.png";
 import GitSvg from "../assets/git.svg";
 import JavaSvg from "../assets/java.svg";
 import CPP from "../assets/cpp.svg";
-import Python from "../assets/python.png"
+// import Python from "../assets/python.png"
 import ReduxLogo from "../assets/redux.svg";
 import FigmaLogo from "../assets/figma.png";
 import movieImg from "../assets/p1_movieManiaSS.png";

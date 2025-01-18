@@ -2,7 +2,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Socials } from "../utils/helper";
 import SocialLinks from "../components/Home/SocialLinks";
-import resume from "../assets/Vivek_Nag_Resume.pdf";
 import AboutMe from "../components/Home/AboutMe";
 import MeraThobda from "../components/Home/MeraThobda";
 import CV_Button from "../components/Home/CV_Button";
@@ -14,11 +13,11 @@ const Home = () => {
         >
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full pt-4 pb-10">
                 {/* image section */}
-                <MeraThobda/>
+                <MeraThobda />
 
                 {/* content section */}
                 <div className="w-full md:w-2/3 h-full flex flex-col items-center justify-center gap-4 text-center md:text-left md:pr-8">
-                    <AboutMe/>
+                    <AboutMe />
 
                     {/* social media links */}
                     <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mt-8 mb-4">
@@ -32,13 +31,15 @@ const Home = () => {
 
                     {/* resume button */}
 
-                    <motion.a href={resume} download
+                    <motion.a href="https://docs.google.com/document/d/1iZ9CLmzUWyMbIJBxDyD1d2GkRtTDWsymGgj4xgEExAU/edit?tab=t.0" download
+                        target="_blank"
+                        rel="noopener noreferrer"
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.6, ease: "easeIn" }}
                     >
-                        
-                    <CV_Button/>
+
+                        <CV_Button />
                     </motion.a>
 
                 </div>
