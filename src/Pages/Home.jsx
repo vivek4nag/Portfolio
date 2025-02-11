@@ -31,7 +31,7 @@ const Home = () => {
 
                     {/* resume button */}
 
-                    <motion.a href="https://docs.google.com/document/d/1iZ9CLmzUWyMbIJBxDyD1d2GkRtTDWsymGgj4xgEExAU/edit?tab=t.0" download
+                    <motion.a href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                         initial={{ opacity: 0, y: 40 }}
